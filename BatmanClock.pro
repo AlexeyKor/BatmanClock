@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2012-10-14T15:41:55
+# Project created by QtCreator 2012-10-17T23:28:30
 #
 #-------------------------------------------------
 
@@ -10,8 +10,9 @@ TARGET = BatmanClock
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp\
+        mainwindow.cpp
 
-HEADERS  +=
+HEADERS  += mainwindow.h
 
-FORMS    +=
+FORMS    += mainwindow.ui
