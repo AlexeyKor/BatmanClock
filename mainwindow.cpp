@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QGraphicsScene * scene = new QGraphicsScene;
+    ui->graphicsView->setScene(scene);
+    scene->addEllipse(QRectF(-100.0, -100.0, 100.0, 100.0));
 }
 
 MainWindow::~MainWindow()
