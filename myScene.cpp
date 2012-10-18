@@ -4,7 +4,7 @@
 
 myScene::myScene(QObject *parent) : QGraphicsScene(parent), isGMT(false)
 {
-    addEllipse(QRectF(-100.0, -100.0, 100.0, 100.0));
+   addEllipse(QRectF(-100.0, -100.0, 100.0, 100.0));
 }
 
 void myScene::GMT()

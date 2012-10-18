@@ -60,22 +60,5 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>GMTCheckBox</sender>
-   <signal>clicked()</signal>
-   <receiver>graphicsView</receiver>
-   <slot>invalidateScene()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>349</x>
-     <y>80</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>196</x>
-     <y>152</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

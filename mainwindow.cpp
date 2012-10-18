@@ -7,8 +7,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    myScene * scene = new myScene;
+    myScene *scene = new myScene;
     ui->graphicsView->setScene(scene);
+    connect(ui->GMTCheckBox, SIGNAL(clicked()), scene, SLOT(GMT()));
 }
 
 MainWindow::~MainWindow()
