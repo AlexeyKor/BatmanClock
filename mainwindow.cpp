@@ -1,14 +1,14 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "mainWindow.h"
+#include "myScene.h"
+#include "ui_mainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QGraphicsScene * scene = new QGraphicsScene;
+    myScene * scene = new myScene;
     ui->graphicsView->setScene(scene);
-    scene->addEllipse(QRectF(-100.0, -100.0, 100.0, 100.0));
 }
 
 MainWindow::~MainWindow()
