@@ -15,6 +15,7 @@ public slots:
 
 private:
     int GMT;
+    QGraphicsPixmapItem *hourHand, *minuteHand;
 };
 
 #endif // MYSCENE_H

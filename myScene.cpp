@@ -4,27 +4,33 @@
 
 myScene::myScene(QObject *parent) : QGraphicsScene(parent), GMT(0)
 {
-    QImage clock("clock.png")
-            , hour("hourHand.png")
-            , minute("minuteHand.png");
+    QImage clockImage("clock.png")
+            , hourImage("hourHand.png")
+            , minuteImage("minuteHand.png");
 
-    QGraphicsPixmapItem *clockFace = new QGraphicsPixmapItem(QPixmap::fromImage(clock))
-            , *hourHand = new QGraphicsPixmapItem(QPixmap::fromImage(hour))
-            , *minuteHand = new QGraphicsPixmapItem(QPixmap::fromImage(minute));
+    QGraphicsPixmapItem *clockFace = new QGraphicsPixmapItem(QPixmap::fromImage(clockImage))
+            , *hour = new QGraphicsPixmapItem(QPixmap::fromImage(hourImage))
+            , *minute = new QGraphicsPixmapItem(QPixmap::fromImage(minuteImage));
+
+    hourHand = hour;
+    minuteHand = minute;
 
     clockFace->setScale(0.3);
     addItem(clockFace);
+
     hourHand->setScale(0.3);
-    hourHand->setOffset(597,270);
+    hourHand->setTransformOriginPoint(53, 397);
+    hourHand->setPos(142, -200);
     addItem(hourHand);
-    minuteHand->setTransformOriginPoint(0,0);
+
+    minuteHand->setTransformOriginPoint(43, 521);
     minuteHand->setScale(0.3);
-    minuteHand->rotate(75);
-    minuteHand->setOffset(605,150);
+    minuteHand->setPos(151, -323);
     addItem(minuteHand);
 }
 
 void myScene::changeGMT()
 {
     GMT = abs(GMT - 30);
+    //minuteHand->setRotation(GMT);
 }
