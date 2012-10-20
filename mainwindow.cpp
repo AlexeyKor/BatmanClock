@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     myScene *scene = new myScene;
     ui->myScene->setScene(scene);
-    connect(ui->GMTCheckBox, SIGNAL(clicked()), scene, SLOT(GMT()));
+    connect(ui->GMTCheckBox, SIGNAL(clicked()), scene, SLOT(changeGMT()));
 }
 
 MainWindow::~MainWindow()

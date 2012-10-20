@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>602</width>
+    <height>481</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,16 +19,16 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>401</width>
-      <height>271</height>
+      <width>601</width>
+      <height>421</height>
      </rect>
     </property>
    </widget>
    <widget class="QCheckBox" name="GMTCheckBox">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>40</y>
+      <x>510</x>
+      <y>30</y>
       <width>70</width>
       <height>17</height>
      </rect>
@@ -43,7 +43,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>602</width>
      <height>21</height>
     </rect>
    </property>

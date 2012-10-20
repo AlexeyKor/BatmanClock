@@ -11,13 +11,10 @@ public:
     myScene(QObject *parent = 0);
 
 public slots:
-    void GMT();
-
-protected:
-    void timerEvent();
+    void changeGMT();
 
 private:
-    bool isGMT;
+    int GMT;
 };
 
 #endif // MYSCENE_H
