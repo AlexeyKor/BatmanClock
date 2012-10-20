@@ -4,11 +4,9 @@
 
 myScene::myScene(QObject *parent) : QGraphicsScene(parent), isGMT(false)
 {
-    //addEllipse(QRectF(-200.0, -200.0, 200.0, 200.0));
-    //addRect(QRectF(-200.0, -200.0, 200.0, 200.0));
-    QImage* qimage = new QImage("qt.png");
-    QGraphicsPixmapItem pixmapItem(QPixmap::fromImage(*qimage));
-    addItem(&pixmapItem);
+    QImage clock("qt.png");
+    QGraphicsPixmapItem *clockSceneItem = new QGraphicsPixmapItem(QPixmap::fromImage(clock));
+    addItem(clockSceneItem);
 }
 
 void myScene::GMT()
