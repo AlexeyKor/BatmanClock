@@ -40,7 +40,6 @@ myScene::myScene(QObject *parent) : QGraphicsScene(parent), GMT(0)
 void myScene::changeGMT()
 {
     GMT = abs(GMT - 90);
-    //minuteHand->setRotation(GMT);
 }
 
 void myScene::changeTime()
