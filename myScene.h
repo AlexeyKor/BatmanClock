@@ -2,6 +2,7 @@
 #define MYSCENE_H
 
 #include <QGraphicsScene>
+#include <QTime>
 
 class myScene : public QGraphicsScene
 {
@@ -12,6 +13,7 @@ public:
 
 public slots:
     void changeGMT();
+    void changeTime();
 
 private:
     int GMT;
